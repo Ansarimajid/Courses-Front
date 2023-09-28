@@ -8,6 +8,9 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install project dependencies and fix vulnerabilities
+
+RUN npm cache clean --force
+
 RUN npm install && npm audit fix
 
 # Copy the rest of the application files to the container
