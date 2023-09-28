@@ -1,0 +1,14 @@
+# Ignore development-related files and directories
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore Docker-related files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Ignore editor-related files and directories
+.vscode/
+.idea/
+*.git
